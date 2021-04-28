@@ -1,0 +1,16 @@
+﻿## Interface: 30300
+## Title:|cffffe00a<|r|cffff7d0aDBM|r|cffffe00a>|r |cff0055FFOptions GUI|r
+## Title-ruRU:|cffffe00a<|r|cffff7d0aDBM|r|cffffe00a>|r |cff0055FFПараметры GUI|r
+## Notes: GUI for Deadly Boss Mods
+## Notes-ruRU: Графический интерфейс пользователя DBM
+## RequiredDeps: DBM-Core
+## LoadOnDemand: 1
+## DefaultState: enabled
+
+localization.en.lua
+localization.ru.lua
+
+DBM-GUI_DropDown.xml
+DBM-GUI_Templates.xml
+DBM-GUI.lua
+DBM-GUI_DropDown.lua
