@@ -2,10 +2,9 @@ local mod	= DBM:NewMod("YoggSaron", "DBM-Ulduar")
 local L		= mod:GetLocalizedStrings()
 
 mod:SetRevision("20210425232323")
-
 mod:SetCreatureID(33288)
+
 mod:RegisterCombat("yell", L.YellPull)
-mod:SetUsedIcons(6, 7, 8)
 
 mod:RegisterEvents(
 	"SPELL_CAST_START",
@@ -17,6 +16,7 @@ mod:RegisterEvents(
 	"UNIT_HEALTH"
 )
 
+mod:SetUsedIcons(6, 7, 8)
 
 local warnMadness 					= mod:NewCastAnnounce(313003, 2)
 local warnFervorCast 				= mod:NewCastAnnounce(312989, 3)

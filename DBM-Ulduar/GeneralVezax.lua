@@ -1,11 +1,11 @@
 local mod	= DBM:NewMod("GeneralVezax", "DBM-Ulduar")
 local L		= mod:GetLocalizedStrings()
 
-mod:SetRevision("202104251754")
-
+mod:SetRevision("202104251754") 
 mod:SetCreatureID(33271)
-mod:RegisterCombat("yell", L.YellPull)
 mod:SetUsedIcons(7, 8)
+
+mod:RegisterCombat("combat", 33271)
 
 mod:RegisterEvents(
 	"SPELL_CAST_START",
