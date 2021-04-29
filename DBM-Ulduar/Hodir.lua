@@ -1,11 +1,11 @@
 local mod	= DBM:NewMod("Hodir", "DBM-Ulduar")
 local L		= mod:GetLocalizedStrings()
 
-mod:SetRevision("20210429165100")
+mod:SetRevision(("$Revision: 4154 $"):sub(12, -3))
 mod:SetCreatureID(32845)
 mod:SetUsedIcons(8)
 
-mod:RegisterCombat("yell", L.YellPull)
+mod:RegisterCombat("combat")
 mod:RegisterKill("yell", L.YellKill)
 
 mod:RegisterEvents(
@@ -24,7 +24,6 @@ local specWarnBitingCold	= mod:NewSpecialWarningMove(312819, false)
 mod:AddBoolOption("PlaySoundOnFlashFreeze", true, "announce")
 mod:AddBoolOption("YellOnStormCloud", true, "announce")
 
-
 local enrageTimer			= mod:NewBerserkTimer(475)
 local timerFlashFreeze		= mod:NewCastTimer(9, 312818)
 local timerFrozenBlows		= mod:NewBuffActiveTimer(20, 312816)
@@ -40,7 +39,7 @@ function mod:OnCombatStart(delay)
 end
 
 function mod:SPELL_CAST_START(args)
-	if args:IsSpellID(312818, 312465) then  --Ледяная вспышка
+	if args:IsSpellID(312818,312465) then  --Ледяная вспышка
 		timerFlashFreeze:Start()
 		warnFlashFreeze:Show()
 		timerFlashFrCD:Start()
@@ -51,7 +50,7 @@ function mod:SPELL_CAST_START(args)
 end
 
 function mod:SPELL_AURA_APPLIED(args)
-	if args:IsSpellID(312817, 312816, 312464, 312463) then --Ледяные дуновения
+	if args:IsSpellID(312817, 312816,312464,312463) then --Ледяные дуновения
 		timerFrozenBlows:Start()
 	elseif args:IsSpellID(312831, 312478) then -- Грозовая туча 
 		warnStormCloud:Show(args.destName)
