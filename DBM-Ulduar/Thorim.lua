@@ -31,7 +31,7 @@ local timerStormhammer			= mod:NewCastTimer(16, 312889)
 local timerChainlightning       = mod:NewCDTimer(16, 312895)
 local timerLightningCharge	 	= mod:NewCDTimer(16, 312897) 
 local timerUnbalancingStrike	= mod:NewCastTimer(26, 312898)
-local timerHardmode				= mod:NewTimer(171, "TimerHardmode", 312898)
+local timerHardmode				= mod:NewTimer(181, "TimerHardmode", 312898)
 
 mod:AddBoolOption("RangeFrame")
 mod:AddBoolOption("YellOnUnbalancingStrike", true)
