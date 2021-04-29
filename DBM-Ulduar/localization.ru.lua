@@ -41,7 +41,9 @@ L = DBM:GetModLocalization("Ignis")
 L:SetGeneralLocalization{
 	name = "Повелитель Горнов Игнис"
 }
-
+L:SetMiscLocalization{
+	YellPull	= "Мерзкие глупцы! Ваша кровь закалит оружие которым был завоеван этот мир!"
+}
 L:SetTimerLocalization{
 }
 
@@ -104,6 +106,10 @@ L = DBM:GetModLocalization("XT002")
 
 L:SetGeneralLocalization{
 	name = "Разрушитель XT-002"
+}
+
+L:SetMiscLocalization{
+	YellPull	= "Новые игрушки ? Для меня ? Обещаю, в этот раз я их не поломаю!"
 }
 
 L:SetTimerLocalization{
@@ -222,6 +228,7 @@ L:SetOptionLocalization{
 L:SetMiscLocalization{
 	Yell_Trigger_arm_left	= "Царапина...",
 	Yell_Trigger_arm_right	= "Всего лишь плоть!",
+	YellPull 				= "Вы не должен пройти!",
 	Health_Body				= "Кологарн",
 	Health_Right_Arm		= "Правая рука",
 	Health_Left_Arm			= "Левая рука",
@@ -283,6 +290,7 @@ L:SetOptionLocalization{
 
 L:SetMiscLocalization{
 	YellKill	= "Наконец-то я... свободен от его оков…",
+	YellPull    = "Вы будете наказаны за это вторжение!",
 	YellCloud	= "На мне Грозовая Туча!"
 }
 
@@ -332,6 +340,7 @@ L:SetMiscLocalization{
 	Snaplasher         = "Хватоплет",
 	StormLasher        = "Грозовой плеточник",
 	YellKill           = "Он больше не властен надо мной. Мой взор снова ясен. Благодарю вас, герои.",
+	YellPull		   = "Деревья, дайте мне силы!",
 	TrashRespawnTimer  = "Возрождение монстров"
 }
 
@@ -460,6 +469,7 @@ L:SetOptionLocalization{
 
 L:SetMiscLocalization{
 	EmoteSaroniteVapors	= "Облако саронитовых паров образовывается поблизости!",
+	YellPull            = "Ваша смерть возвестит новую эру страданий!",
 	YellLeech			= "Вытягивание жизни на мне!",
 	YellCrash			= "Темное сокрушение на мне!"
 }

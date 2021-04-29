@@ -1,11 +1,12 @@
 ﻿local mod	= DBM:NewMod("Kologarn", "DBM-Ulduar")
 local L		= mod:GetLocalizedStrings()
 
-mod:SetRevision(("$Revision: 4134 $"):sub(12, -3))
+mod:SetRevision("20210429163700")
+
 mod:SetCreatureID(32930)
+mod:RegisterCombat("yell",L.YellPull)
 mod:SetUsedIcons(5, 6, 7, 8)
 
-mod:RegisterCombat("combat", 32930, 32933, 32934)
 
 mod:RegisterEvents(
 	"SPELL_AURA_APPLIED",

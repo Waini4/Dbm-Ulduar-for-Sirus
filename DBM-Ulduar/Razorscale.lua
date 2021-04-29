@@ -1,12 +1,11 @@
 local mod	= DBM:NewMod("Razorscale", "DBM-Ulduar")
 local L		= mod:GetLocalizedStrings()
 
-mod:SetRevision(("$Revision: 4133 $"):sub(12, -3))
-mod:SetCreatureID(33186)
-mod:SetUsedIcons(8)
+mod:SetRevision("202104291628")
 
---mod:RegisterCombat("combat")
+mod:SetCreatureID(33186)
 mod:RegisterCombat("yell", L.YellAir)
+mod:SetUsedIcons(8)
 
 mod:RegisterEvents(
 	"SPELL_CAST_START",

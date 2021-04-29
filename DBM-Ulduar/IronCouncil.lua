@@ -1,11 +1,11 @@
 local mod	= DBM:NewMod("IronCouncil", "DBM-Ulduar")
 local L		= mod:GetLocalizedStrings()
 
-mod:SetRevision(("$Revision: 4154 $"):sub(12, -3))
-mod:SetCreatureID(32927)
-mod:SetUsedIcons(1, 2, 3, 4, 5, 6, 7, 8)
+mod:SetRevision("20210429163000")
 
+mod:SetCreatureID(32927)
 mod:RegisterCombat("combat", 32867, 32927, 32857)
+mod:SetUsedIcons(1, 2, 3, 4, 5, 6, 7, 8)
 
 mod:RegisterEvents(
 	"SPELL_CAST_START",
